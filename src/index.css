@@ -1,0 +1,13 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto; /* Habilita ajustes ópticos */
+  font-weight: 400; /* Peso normal por padrão */
+  font-style: normal; /* Estilo normal */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
