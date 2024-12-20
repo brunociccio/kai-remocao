@@ -2,12 +2,17 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto; /* Habilita ajustes ópticos */
-  font-weight: 400; /* Peso normal por padrão */
-  font-style: normal; /* Estilo normal */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden; /* Evita o estouro horizontal */
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden; /* Garante que o HTML não crie barra lateral */
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+* {
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
