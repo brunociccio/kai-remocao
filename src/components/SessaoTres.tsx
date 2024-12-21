@@ -25,11 +25,11 @@ const fadeOut = keyframes`
 
 const SectionContainer = styled.section`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.7rem;
-  position: relative; 
+  position: relative;
   color: ${(props) => props.theme.colors.white};
   overflow: hidden;
   background: linear-gradient(180deg, #1e1e1e 90%, #000000 20%, #1e1e1e 90%);
@@ -52,7 +52,7 @@ const ImageContainer = styled.div`
   filter: grayscale(10%);
 
   @media (max-width: 768px) {
-    height: 750px; 
+    height: 750px;
   }
 `;
 
@@ -68,16 +68,16 @@ const TextOverlay = styled.div<TextOverlayProps>`
   align-items: center;
   gap: 2rem;
   margin: 0 2em;
-  width: 95%; 
-  max-width: 1000px; 
+  width: 95%;
+  max-width: 1000px;
   padding: 2rem 2rem 1rem 2.5rem;
-  text-align: right; 
+  text-align: right;
 
   @media (max-width: 768px) {
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    gap: 0.5rem; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
     padding: 3rem 2rem 1rem 0;
   }
 
@@ -91,12 +91,12 @@ const TextOverlay = styled.div<TextOverlayProps>`
         `}
 
   h1 {
-    font-size: 5rem; 
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 
     @media (max-width: 1024px) {
-      font-size: 3.5rem; 
+      font-size: 3.5rem;
     }
 
     @media (max-width: 768px) {
@@ -105,8 +105,8 @@ const TextOverlay = styled.div<TextOverlayProps>`
   }
 
   p {
-    font-size: 1.2rem; 
-    line-height: 1.5; 
+    font-size: 1.2rem;
+    line-height: 1.5;
     font-weight: 400;
 
     @media (max-width: 1024px) {
@@ -114,7 +114,7 @@ const TextOverlay = styled.div<TextOverlayProps>`
     }
 
     @media (max-width: 768px) {
-      font-size: 0.9rem; 
+      font-size: 0.9rem;
     }
   }
 `;
@@ -128,13 +128,13 @@ const ProfileImage = styled.img`
 
   @media (max-width: 1024px) {
     height: 350px;
-    width: 350px; 
+    width: 350px;
   }
 
   @media (max-width: 768px) {
     height: 250px;
-    width: 250px; 
-    margin-left: 0; 
+    width: 250px;
+    margin-left: 0;
   }
 `;
 

@@ -5,14 +5,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  overflow-x: hidden; /* Evita o estouro horizontal */
+  overflow-x: hidden; 
 }
 
 html {
   width: 100%;
-  overflow-x: hidden; /* Garante que o HTML não crie barra lateral */
+  overflow-x: hidden; 
 }
 
 * {
-  box-sizing: border-box; /* Inclui padding e border na largura total */
+  box-sizing: border-box; 
 }

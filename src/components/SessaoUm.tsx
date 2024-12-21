@@ -8,7 +8,7 @@ const fadeIn = keyframes`
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); 
   }
 `;
 
@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
       rgba(0, 0, 0, 0.4) 50%,
       rgba(30, 30, 30, 0.4) 95%
     ),
-    url('/fotos/teste-bg-3.jpg') no-repeat center/cover;
+    url('/fotos/teste-bg-3.jpg') no-repeat center/cover; /* Ajustado para usar o caminho de /public */
   filter: grayscale(20%);
 `;
 
