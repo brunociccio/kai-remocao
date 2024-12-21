@@ -4,11 +4,11 @@ import styled, { keyframes, css } from 'styled-components';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(20px); /* Começa fora da posição */
+    transform: translateY(20px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Volta à posição original */
+    transform: translateY(0); 
   }
 `;
 
@@ -52,7 +52,7 @@ const ImageContainer = styled.div`
   filter: grayscale(10%);
 
   @media (max-width: 768px) {
-    height: 750px; /* Aumenta o espaço vertical para comportar tudo */
+    height: 750px; 
   }
 `;
 
@@ -64,14 +64,14 @@ const TextOverlay = styled.div<TextOverlayProps>`
   position: absolute;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end; /* Alinha o conteúdo à margem direita */
+  justify-content: flex-end;
   align-items: center;
   gap: 2rem;
   margin: 0 2em;
   width: 95%; 
   max-width: 1000px; 
   padding: 2rem 2rem 1rem 2.5rem;
-  text-align: right; /* Texto alinhado à direita */
+  text-align: right; 
 
   @media (max-width: 768px) {
     flex-direction: column; 
@@ -96,11 +96,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
     margin-bottom: 1.5rem;
 
     @media (max-width: 1024px) {
-      font-size: 3.5rem; /* Ajusta para tablets */
+      font-size: 3.5rem; 
     }
 
     @media (max-width: 768px) {
-      font-size: 2.5rem; /* Ajusta para celulares */
+      font-size: 2.5rem;
     }
   }
 
@@ -110,11 +110,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
     font-weight: 400;
 
     @media (max-width: 1024px) {
-      font-size: 1.2rem; /* Ajusta para tablets */
+      font-size: 1.2rem;
     }
 
     @media (max-width: 768px) {
-      font-size: 0.9rem; /* Ajusta para celulares */
+      font-size: 0.9rem; 
     }
   }
 `;
@@ -124,22 +124,19 @@ const ProfileImage = styled.img`
   width: 450px;
   object-fit: cover;
   border-radius: 8px;
-
-  /* Adiciona margem automática à esquerda para alinhar a imagem à direita */
   margin-left: auto;
 
   @media (max-width: 1024px) {
     height: 350px;
-    width: 350px; /* Reduz a imagem em tablets */
+    width: 350px; 
   }
 
   @media (max-width: 768px) {
     height: 250px;
-    width: 250px; /* Reduz ainda mais a imagem para celulares */
-    margin-left: 0; /* Remove a margem em celulares */
+    width: 250px; 
+    margin-left: 0; 
   }
 `;
-
 
 const SessaoTres: React.FC = () => {
   const [isTextVisible, setIsTextVisible] = useState(false);

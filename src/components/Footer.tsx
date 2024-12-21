@@ -11,7 +11,7 @@ const FooterContainer = styled.footer`
   text-align: left;
 
   @media (max-width: 768px) {
-    padding: 0 1em 2em 1em; /* Reduz o espaçamento geral em celulares */
+    padding: 0 1em 2em 1em; 
   }
 `;
 
@@ -21,7 +21,7 @@ const Title = styled.h3`
   margin-left: 3em;
 
   @media (max-width: 768px) {
-    margin-left: 0.5em; /* Ajusta a margem à esquerda em celulares */
+    margin-left: 0.5em; 
   }
 `;
 
@@ -33,8 +33,8 @@ const ContactContainer = styled.div`
   margin-left: 3em;
 
   @media (max-width: 768px) {
-    margin-left: 3em; /* Ajusta a margem à esquerda em celulares */
-    gap: 0.5rem; /* Reduz o espaçamento entre itens */
+    margin-left: 3em; 
+    gap: 0.5rem; 
   }
 `;
 
@@ -44,7 +44,7 @@ const ContactItem = styled.div`
   gap: 0.8rem;
 
   @media (max-width: 768px) {
-    gap: 0.5rem; /* Reduz o espaçamento entre ícones e links */
+    gap: 0.5rem; 
   }
 `;
 
@@ -64,7 +64,7 @@ const ContactLink = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 1rem; /* Reduz o tamanho da fonte em celulares */
+    font-size: 1rem; 
   }
 `;
 
@@ -74,7 +74,7 @@ const Icon = styled.img`
 
   @media (max-width: 768px) {
     width: 20px;
-    height: 20px; /* Reduz o tamanho dos ícones em celulares */
+    height: 20px; 
   }
 `;
 

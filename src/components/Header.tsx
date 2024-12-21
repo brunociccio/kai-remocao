@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
   padding: 0.5rem 4rem;
   background: linear-gradient(180deg, #000000 20%, #1e1e1e 90%);
   color: ${(props) => props.theme.colors.white};
-  width: 100%; /* Garante que o header respeite a largura */
+  width: 100%; 
 
   @media (max-width: 768px) {
     padding: 0.5rem 2rem;
@@ -25,7 +25,7 @@ const Logo = styled.div`
   font-weight: 100;
 
   @media (max-width: 432px) {
-    font-size: 2.5rem; /* Ajusta o tamanho do logo em telas menores */
+    font-size: 2.5rem;
   }
 `;
 
@@ -36,7 +36,7 @@ const Nav = styled.nav`
   margin-right: 7em;
 
   @media (max-width: 1024px) {
-    display: none; /* Oculta a navegação em telas menores */
+    display: none; 
   }
 `;
 

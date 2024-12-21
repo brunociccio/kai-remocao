@@ -4,11 +4,11 @@ import styled, { keyframes, css } from 'styled-components';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(20px); /* Começa fora da posição */
+    transform: translateY(20px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Volta à posição original */
+    transform: translateY(0);
   }
 `;
 
@@ -84,11 +84,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
     margin-bottom: 1rem;
 
     @media (max-width: 1024px) {
-      font-size: 4rem; /* Ajuste para telas de tablet */
+      font-size: 4rem;
     }
 
     @media (max-width: 768px) {
-      font-size: 3rem; /* Ajuste para telas de celular */
+      font-size: 3rem; 
     }
   }
 
@@ -98,11 +98,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
     margin-bottom: 1rem;
 
     @media (max-width: 1024px) {
-      font-size: 2rem; /* Ajuste para telas de tablet */
+      font-size: 2rem; 
     }
 
     @media (max-width: 768px) {
-      font-size: 1.7rem; /* Ajuste para telas de celular */
+      font-size: 1.7rem; 
     }
   }
 
@@ -113,11 +113,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
     font-weight: 400;
 
     @media (max-width: 1024px) {
-      font-size: 1.1rem; /* Ajuste para telas de tablet */
+      font-size: 1.1rem; 
     }
 
     @media (max-width: 768px) {
-      font-size: 1rem; /* Ajuste para telas de celular */
+      font-size: 1rem; 
     }
   }
 `;

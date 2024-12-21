@@ -51,7 +51,7 @@ const ImageContainer = styled.div`
 
 
     @media (max-width: 768px) {
-      height: 650px; /* Expande ainda mais em celulares */
+      height: 650px; 
       border-radius: 8px;
     }
   }
@@ -74,11 +74,11 @@ const TextOverlay = styled.div<TextOverlayProps>`
   text-align: left;
 
   @media (max-width: 1024px) {
-    text-align: center; /* Centraliza texto */
+    text-align: center; 
 
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    transform: translateY(-50%); 
 
-    padding: 2rem; /* Ajusta padding */
+    padding: 2rem; 
   }
 
   @media (max-width: 768px) {
@@ -100,11 +100,11 @@ margin: 2em 0;
     margin-bottom: 1rem;
 
     @media (max-width: 1024px) {
-      font-size: 2.2rem; /* Ajusta para tablets */
+      font-size: 2.2rem; 
     }
 
     @media (max-width: 768px) {
-      font-size: 2rem; /* Ajusta para celulares */
+      font-size: 2rem; 
     }
   }
 
@@ -115,11 +115,11 @@ margin: 2em 0;
     font-weight: 400;
 
     @media (max-width: 1024px) {
-      font-size: 1.1rem; /* Ajusta para tablets */
+      font-size: 1.1rem; 
     }
 
     @media (max-width: 768px) {
-      font-size: 0.9rem; /* Ajusta para celulares */
+      font-size: 0.9rem; 
     }
   }
 `;
