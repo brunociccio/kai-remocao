@@ -87,11 +87,11 @@ const Footer: React.FC = () => {
         <ContactItem>
           <Icon src="/fotos/whatsapp.png" alt="WhatsApp" />
           <ContactLink
-            href="https://wa.me/5511956578224"
+            href="https://api.whatsapp.com/send/?phone=5511953578224&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
           >
-            (11) 9-5657-8224
+            (11) 9-5357-8224
           </ContactLink>
         </ContactItem>
 

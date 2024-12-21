@@ -33,7 +33,7 @@
     const WhatsAppButton: React.FC = () => {
     return (
     <ButtonContainer
-        href="https://wa.me/5511956578224"
+        href="https://api.whatsapp.com/send/?phone=5511953578224&text&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"
     >
