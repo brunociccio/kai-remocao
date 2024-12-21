@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
       rgba(0, 0, 0, 0.4) 50%,
       rgba(30, 30, 30, 0.4) 95%
     ),
-    url('/public/fotos/bg4.jpg') no-repeat center/cover;
+    url('/fotos/bg4.jpg') no-repeat center/cover;
   filter: grayscale(20%);
 `;
 
