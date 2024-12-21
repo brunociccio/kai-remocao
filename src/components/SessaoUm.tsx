@@ -67,7 +67,7 @@ const TextOverlay = styled.div<TextOverlayProps>`
   border-radius: 10px;
   width: 90%;
   max-width: 800px;
-  padding: 3rem 2rem 1rem 2.5rem;
+  padding: 1.5rem 2rem 1rem 2.5rem;
 
   ${({ isVisible }) =>
     isVisible

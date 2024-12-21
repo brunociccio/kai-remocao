@@ -32,13 +32,12 @@ const SectionContainer = styled.section`
   position: relative; 
   color: ${(props) => props.theme.colors.white};
   overflow: hidden;
-  background: linear-gradient(180deg, #1e1e1e 100%, #000000 20%,  #1e1e1e 90%);
+  background: linear-gradient(180deg, #1e1e1e 100%, #000000 20%, #1e1e1e 90%);
 `;
 
 const ImageContainer = styled.div`
   position: relative;
   width: 100%;
-  
   border-radius: 8px;
   overflow: hidden;
 
@@ -49,6 +48,12 @@ const ImageContainer = styled.div`
     object-fit: cover; 
     object-position: center -20px;
     filter: grayscale(10%);
+
+
+    @media (max-width: 768px) {
+      height: 650px; /* Expande ainda mais em celulares */
+      border-radius: 8px;
+    }
   }
 `;
 
@@ -58,17 +63,28 @@ interface TextOverlayProps {
 
 const TextOverlay = styled.div<TextOverlayProps>`
   position: absolute;
-  top: 2em; 
-  right: 2em;
+  top: 1.5em;
   color: ${(props) => props.theme.colors.white};
   background-color: rgba(0, 0, 0, 0.75); 
-  margin: 1em;
+  margin: 0.5em 4em;
   border-radius: 10px;
   width: 100%; 
   max-width: 600px;
-  padding: 1rem 3rem 3rem 5rem; 
+  padding: 2rem 3rem; 
+  text-align: left;
 
-  /* Animações de entrada e saída */
+  @media (max-width: 1024px) {
+    text-align: center; /* Centraliza texto */
+
+    transform: translateY(-50%); /* Centraliza verticalmente */
+
+    padding: 2rem; /* Ajusta padding */
+  }
+
+  @media (max-width: 768px) {
+margin: 2em 0;
+  }
+
   ${({ isVisible }) =>
     isVisible
       ? css`
@@ -81,14 +97,30 @@ const TextOverlay = styled.div<TextOverlayProps>`
   h2 {
     font-size: 2.5rem; 
     font-weight: bold;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+
+    @media (max-width: 1024px) {
+      font-size: 2.2rem; /* Ajusta para tablets */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem; /* Ajusta para celulares */
+    }
   }
 
   p {
     font-size: 1.2rem; 
     line-height: 1.5; 
     margin-bottom: 1.5rem; 
-    font-weight: 400; 
+    font-weight: 400;
+
+    @media (max-width: 1024px) {
+      font-size: 1.1rem; /* Ajusta para tablets */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; /* Ajusta para celulares */
+    }
   }
 `;
 
