@@ -154,7 +154,7 @@ const SessaoDois: React.FC = () => {
   return (
     <SectionContainer id="sessao-dois" ref={sectionRef}>
       <ImageContainer>
-        <img src="/atendimento-2.jpg" alt="Espaço de Atendimento" />
+        <img src="/public/fotos/atendimento.jpg" alt="Espaço de Atendimento" />
         <TextOverlay isVisible={isTextVisible}>
           <h2>Espaço de Atendimento</h2>
           <p>

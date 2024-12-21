@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
       rgba(0, 0, 0, 0.5) 50%,
       rgba(30, 30, 30, 0.5) 95%
     ),
-    url('/foto-sessao-um-5.jpg') no-repeat center/cover;
+    url('/public/fotos/sessaotres.jpg') no-repeat center/cover;
   filter: grayscale(10%);
 
   @media (max-width: 768px) {
@@ -169,7 +169,7 @@ const SessaoTres: React.FC = () => {
     <SectionContainer id="sessao-tres" ref={sectionRef}>
       <ImageContainer>
         <TextOverlay isVisible={isTextVisible}>
-          <ProfileImage src="/perfil-sessao-3.jpg" alt="Foto de perfil" />
+          <ProfileImage src="/public/fotos/perfil.jpg" alt="Foto de perfil" />
           <div>
             <h1>Sobre Mim</h1>
             <p>

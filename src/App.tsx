@@ -2,7 +2,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { theme } from './theme';  // importe o tema
+import { theme } from './theme'; 
 import Home from './pages/Home';
 
 const App: React.FC = () => {
