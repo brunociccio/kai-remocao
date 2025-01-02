@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
       rgba(0, 0, 0, 0.5) 50%,
       rgba(30, 30, 30, 0.5) 95%
     ),
-    url('/fotos/bg-perfil-site.jpg') no-repeat center/cover;
+    url('/fotos/fundo-perfil.jpg') no-repeat center/cover;
   filter: grayscale(10%);
 
   @media (max-width: 768px) {
