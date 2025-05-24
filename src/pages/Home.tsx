@@ -7,6 +7,7 @@ import SessaoDois from '../components/SessaoDois';
 import Sessaotres from '../components/SessaoTres';
 import SessaoQuatro from '../components/SessaoQuatro';
 import WhatsAppButton from '../components/WhatsAppButton';
+import SessaoCinco from '../components/SessaoCinco';
 
 const Home: React.FC = () => {
   return (
@@ -17,8 +18,10 @@ const Home: React.FC = () => {
       {/* Sessões intermediárias */}
       <SessaoUm />
       <Sessaotres/>
-      <SessaoQuatro/>
+      <SessaoCinco/>
       <SessaoDois />
+      <SessaoQuatro/>
+      
 
       {/* Footer na base */}
       <Footer />

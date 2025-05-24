@@ -66,12 +66,12 @@ const TextOverlay = styled.div<TextOverlayProps>`
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
-  margin: 0 2em;
+  gap: 2.5rem;
+  margin: 0 1.5em;
   width: 95%;
   max-width: 1000px;
   padding: 2rem 2rem 1rem 2.5rem;
-  text-align: right;
+  text-align: left;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -173,15 +173,13 @@ const SessaoTres: React.FC = () => {
           <div>
             <h1>Sobre Mim</h1>
             <p>
-              Sou o Kai, transmasculino, morador e trabalhador na capital
-              paulista. Com experiência em atendimento ao cliente em estúdio de
-              tatuagem, entendi que muitas pessoas enfrentam dilemas com
-              tatuagens indesejadas. Motivado por essa realidade, iniciei em
-              2022 meus estudos na área de remoção a laser, meu foco é
-              proporcionar a cada cliente um processo, além de eficiente,
-              respeitoso e acolhedor. Se a sua tatuagem já não faz sentido para
-              você, estou aqui para ajudar! Entre em contato e juntos
-              encontraremos a melhor solução para o seu caso.
+            Sou Kai, homem trans, morador e trabalhador da capital paulista. 
+            Com experiência em atendimento em estúdio de tatuagem, percebi como 
+            muitas pessoas lidam com tatuagens que já não fazem sentido. Em 2022, 
+            iniciei meus estudos em remoção a laser, com foco em oferecer um processo 
+            eficiente, respeitoso e acolhedor. Se você quer remover uma tatuagem, 
+            estou aqui para ajudar — entre em contato e encontraremos juntos a 
+            melhor solução para você!
             </p>
           </div>
         </TextOverlay>
