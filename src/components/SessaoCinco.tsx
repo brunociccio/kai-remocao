@@ -141,10 +141,13 @@ const CarouselContainer = styled.div`
   scroll-snap-type: x mandatory;
   gap: 0.5rem;
   width: 100%;
+  
+
 
   img {
     flex-shrink: 0;
-    width: 120%;
+    width: 100%;
+    max-height: 500px;
     max-width: 600px;
     height: auto;
     border-radius: 8px;
@@ -251,11 +254,19 @@ const SessaoCinco: React.FC = () => {
             <ArrowButton className="left" onClick={() => scrollCarousel('left')}>&lt;</ArrowButton>
 
             <CarouselContainer ref={carouselRef}>
-              <img src="/fotos/bg-perfil.jpg" alt="Antes e Depois 1" />
-              <img src="/fotos/bg-perfil.jpg" alt="Antes e Depois 2" />
-              <img src="/fotos/bg-perfil.jpg" alt="Antes e Depois 3" />
-              <img src="/fotos/bg-perfil.jpg" alt="Antes e Depois 4" />
-              <img src="/fotos/bg-perfil.jpg" alt="Antes e Depois 5" />
+              <img src="/fotos/carrossel1.png" alt="Antes e Depois 1" />
+              <img src="/fotos/carrossel2.png" alt="Antes e Depois 2" />
+              <img src="/fotos/carrossel3.png" alt="Antes e Depois 3" />
+              <img src="/fotos/carrossel4.png" alt="Antes e Depois 4" />
+              <img src="/fotos/carrossel5.png" alt="Antes e Depois 5" />
+              <img src="/fotos/carrossel6.png" alt="Antes e Depois 6" />
+              <img src="/fotos/carrossel7.png" alt="Antes e Depois 7" />
+              <img src="/fotos/carrossel8.png" alt="Antes e Depois 8" />
+              <img src="/fotos/carrossel9.png" alt="Antes e Depois 9" />
+              <img src="/fotos/carrossel10.png" alt="Antes e Depois 10" />
+              <img src="/fotos/carrossel11.png" alt="Antes e Depois 11" />
+              <img src="/fotos/carrossel12.png" alt="Antes e Depois 12" />
+              <img src="/fotos/carrossel13.png" alt="Antes e Depois 13" />
             </CarouselContainer>
 
             <ArrowButton className="right" onClick={() => scrollCarousel('right')}>&gt;</ArrowButton>
