@@ -1,3 +1,4 @@
+// src/components/SessaoCinco.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import styled, { keyframes, css } from 'styled-components';
 
@@ -12,7 +13,6 @@ const fadeOut = keyframes`
   to { opacity: 0; transform: translateY(20px); }
 `;
 
-// Estilização geral da sessão
 const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -55,8 +55,17 @@ const ContentWrapper = styled.div`
   padding: 2rem;
   z-index: 2;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    top: 48%;
+    transform: translate(-50%, -48%);
+    padding: 1.5rem;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 1rem;
   }
 `;
@@ -89,8 +98,16 @@ const TextOverlay = styled.div<TextOverlayProps>`
     margin-top: 30px;
     margin-left: 70px;
 
-    @media (max-width: 1024px) { font-size: 4rem; }
-    @media (max-width: 768px) { font-size: 3rem; }
+    @media (max-width: 1024px) {
+      font-size: 3.5rem;
+      margin-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   h2 {
@@ -100,28 +117,35 @@ const TextOverlay = styled.div<TextOverlayProps>`
     margin-top: 20px;
     margin-left: 70px;
 
-    @media (max-width: 1024px) { font-size: 1.7rem; }
-    @media (max-width: 768px) { font-size: 1.6rem; }
+    @media (max-width: 1024px) {
+      font-size: 1.5rem;
+      margin-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
     font-weight: 400;
 
     @media (max-width: 1024px) { font-size: 1.1rem; }
-    @media (max-width: 768px) { font-size: 1rem; }
+    @media (max-width: 768px) { font-size: 1rem; text-align: center; }
   }
 
   @media (max-width: 768px) {
     width: 100%;
     padding: 1rem;
     margin-top: 0;
+    margin-left: 0;
   }
 `;
 
-// Carrossel + Botões
 const CarouselWrapper = styled.div`
   position: relative;
   width: 45%;
@@ -131,7 +155,8 @@ const CarouselWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -141,8 +166,6 @@ const CarouselContainer = styled.div`
   scroll-snap-type: x mandatory;
   gap: 0.5rem;
   width: 100%;
-  
-
 
   img {
     flex-shrink: 0;
@@ -153,6 +176,11 @@ const CarouselContainer = styled.div`
     border-radius: 8px;
     scroll-snap-align: center;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+      max-height: 300px;
+      max-width: 100%;
+    }
   }
 `;
 
@@ -192,7 +220,6 @@ const SessaoCinco: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  // Animação do texto
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -203,18 +230,12 @@ const SessaoCinco: React.FC = () => {
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, []);
 
-  // Auto-scroll carrossel
   useEffect(() => {
     const interval = setInterval(() => {
       if (carouselRef.current) {
@@ -227,12 +248,11 @@ const SessaoCinco: React.FC = () => {
           carouselRef.current.scrollBy({ left: clientWidth, behavior: 'smooth' });
         }
       }
-    }, 3000); // 3 segundos
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
-  // Scroll manual nos botões
   const scrollCarousel = (direction: 'left' | 'right') => {
     if (carouselRef.current) {
       const { clientWidth } = carouselRef.current;
@@ -254,24 +274,17 @@ const SessaoCinco: React.FC = () => {
             <ArrowButton className="left" onClick={() => scrollCarousel('left')}>&lt;</ArrowButton>
 
             <CarouselContainer ref={carouselRef}>
-              <img src="/fotos/carrossel1.png" alt="Antes e Depois 1" />
-              <img src="/fotos/carrossel2.png" alt="Antes e Depois 2" />
-              <img src="/fotos/carrossel3.png" alt="Antes e Depois 3" />
-              <img src="/fotos/carrossel4.png" alt="Antes e Depois 4" />
-              <img src="/fotos/carrossel5.png" alt="Antes e Depois 5" />
-              <img src="/fotos/carrossel6.png" alt="Antes e Depois 6" />
-              <img src="/fotos/carrossel7.png" alt="Antes e Depois 7" />
-              <img src="/fotos/carrossel8.png" alt="Antes e Depois 8" />
-              <img src="/fotos/carrossel9.png" alt="Antes e Depois 9" />
-              <img src="/fotos/carrossel10.png" alt="Antes e Depois 10" />
-              <img src="/fotos/carrossel11.png" alt="Antes e Depois 11" />
-              <img src="/fotos/carrossel12.png" alt="Antes e Depois 12" />
-              <img src="/fotos/carrossel13.png" alt="Antes e Depois 13" />
+              {Array.from({ length: 13 }, (_, i) => (
+                <img
+                  key={i}
+                  src={`/fotos/carrossel${i + 1}.png`}
+                  alt={`Antes e Depois ${i + 1}`}
+                />
+              ))}
             </CarouselContainer>
 
             <ArrowButton className="right" onClick={() => scrollCarousel('right')}>&gt;</ArrowButton>
           </CarouselWrapper>
-
         </ContentWrapper>
       </ImageContainer>
     </SectionContainer>
